@@ -1,0 +1,26 @@
+// Variable
+$Color: black;
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 77vh;
+    background-color: whitesmoke;
+    padding: 2em;
+    align-items: center;
+}
+
+section {
+    max-width: 800px;
+    min-width: 800px;
+    border: $Color solid 2px;
+}
+
+
+
