@@ -13,18 +13,8 @@
  * 
 */
 
-/**
- * Define Global Variables
- */
-
- /**
- * End Global Variables
- * Start Helper Functions
- * 
-*/
 //### : show scroll up button only when page is not top
 const up = document.querySelector('#up');
-const up2 = document.querySelector('button');
 const header = document.querySelector('header');
 up.addEventListener('click', () => {
     window.scrollTo({
@@ -59,12 +49,6 @@ window.addEventListener('scroll', () => {
     if(section4anchor.className == 'your-active-class') {navlist4.style.backgroundColor = 'white';}
     else{navlist4.style.backgroundColor = '#cc1';}
 });
-
-/**
- * End Helper Functions
- * Begin Main Functions
- * 
-*/
 
 // build the Navigation Bar with it's lists
     const navUl = document.querySelector('#navbar__list');
@@ -136,12 +120,8 @@ navlist4.addEventListener('click', () => {
     section4ActiveAnchor();
 });   
 
-/**
- * End Main Functions
- * Begin Events
- * 
-*/
-// Set sections as active
+
+// make Sections highlighted (Active)
 const SectionsCoords = [section1coord,section2coord,section3coord,section4coord];
 const Sections = [section1anchor,section2anchor,section3anchor,section4anchor];
 // set active class for sections while scrolling
