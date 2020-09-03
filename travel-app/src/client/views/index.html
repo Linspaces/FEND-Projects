@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Travel App</title>
+<link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+</head>
+ <body>
+<div id = "app">
+  <div class ="headline">
+    Travel App
+  </div>
+  <div class ="holder">
+    <label for="place_name">My trip to:</label>
+    <input type="text" id="place_name" placeholder="Enter Place Name">
+    <br />
+    <label for="Country">Departing:</label>
+    <input type="date" id="start" name="startDate " value="2020-01-01" min="2020-01-01" max="2030-01-01">
+    <br />
+    <label for="Country">leaving:</label>
+    <input type="date" id="end" name="endDate" value="2020-01-01" min="2020-01-01" max="2030-01-01">
+    <br />
+    <button id="generate" type = "submit"> Submit </button>
+    <br /> <br />      <br /> <br />  
+    <div class="app2">
+      <div id="pic"><img src="" alt="" id="pic2"></div>
+      
+      <div id = "entryHolder">
+        <div class = "title">Place Information</div>
+        <div id = "date">  </div>  
+        <div id = "Htemp"> </div> 
+        <div id = "Ltemp"> </div> 
+        <div id = "location">  </div>  
+        <div id = "weatherD"> </div> 
+        <div id = "daysLeft"> </div> 
+      </div>
+    </div>
+    
+  
+  </div>
+  
+</div>
+
+
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+   </script>
+</body>
+</html>

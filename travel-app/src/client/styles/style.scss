@@ -1,0 +1,182 @@
+body{
+    background: #fffff8;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    justify-content: center;
+}
+
+#app{
+    display: flexbox;
+    /*grid-auto-rows: minmax(150px, auto);*/
+    flex-direction: column;
+    /* grid-template-columns:  */
+    height:100%;
+    width: 100%;
+    background: lightpink;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+input:hover {
+    background-color: gray;
+  }
+
+img{
+    width: 350px;
+    height: 250px;
+}
+
+#pic{
+margin: 10px;
+}
+
+.app2{
+    display: flex;
+    /*grid-auto-rows: minmax(150px, auto);*/
+    flex-direction: column;
+    /* grid-template-columns:  */
+    background: lightsalmon;
+    color: #000000;
+    
+}
+
+.holder{
+display: flexbox;
+flex-direction: column;
+margin: 50px;
+width: fit-content;
+}
+
+.holder2{
+    display: flexbox;
+    flex-direction: row;
+    margin: 50px;
+    width: fit-content;
+    }
+
+.entry{
+    background: rgba(59, 74, 107, .4);
+    float: right;
+    display: block;
+}
+
+#entryHolder{
+background-color: #77bddd;
+font-size: 1.2em;
+width: 70vw;
+height: 50vh;
+color: #fffff8;
+margin: 10px;
+}
+
+#date{
+color: crimson;
+}
+
+#temp{
+color: cyan;
+}
+
+#content{
+color: greenyellow;
+}
+
+.headline {
+background-color: black;
+color: cornsilk;
+font-size: 2em;
+text-align: center;
+}
+.title{
+border:dashed 2px indianred;
+}
+
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label{
+    display:block;
+    font-size: 27px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    width: 320px;
+    background:#22b2da;
+    color: #f0d43a;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+}
+
+button{
+    width: 300px;
+    height: 100px;
+    background: #3b4a6b;
+    color: #f0d43a;
+    font-size: 26px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    box-shadow: 2px 4px 5px #444;
+}
+h1{
+    font-size: 36px;
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #f0d43a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+
+@media only screen and (min-width: 45em){
+    .holder {
+        max-width: 50em;
+        padding: 4em;
+    }
+
+    #entryHolder{
+        
+        font-size: 1.2em;
+        width: 95%;
+        height: 100%;
+        color: #fffff8;
+        margin: 10px;
+        }
+        
+        .app2{
+            display: flex;
+            /*grid-auto-rows: minmax(150px, auto);*/
+            flex-direction: column;
+            /* grid-template-columns:  */
+            
+            color: #000000;
+            
+        }
+
+        img{
+            width: 500px;
+            height: 350px;
+        }
+}
