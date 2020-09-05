@@ -16,7 +16,6 @@ let URL2 = `https://api.weatherbit.io/v2.0/forecast/daily?lat=${latt}&lon=${long
     const request = await fetch('http://localhost:3000/getInfo');
     try{
       const allData = await request.json();
-      document.getElementById('date').innerHTML = `Depart Date: ${departDate}`;
       document.getElementById('Htemp').innerHTML = `High Temp: ${allData.max_temp}`; 
       document.getElementById('Ltemp').innerHTML = `Low Temp: ${allData.low_temp}`;
       document.getElementById('location').innerHTML = `Country Name: ${allData.countryName}`;
@@ -107,6 +106,7 @@ function performAction(e){
     // change the img tag src to be the picture recieved from the pixabay API 
     let img2 = document.getElementById("pic2")
     img2.src = imgSrc
+    img2.alt = CityName
   }, 410))
 }
 try {

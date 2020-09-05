@@ -2,44 +2,48 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Travel App</title>
 <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
 </head>
  <body>
-<div id = "app">
   <div class ="headline">
-    Travel App
+    <h1>Travel App</h1>
   </div>
+  
   <div class ="holder">
-    <label for="place_name">My trip to:</label>
-    <input type="text" id="place_name" placeholder="Enter Place Name">
+  <div class="outerContainer">
+    <div class="container">
+      <label for="place_name">My trip to:</label>
+      <input type="text" id="place_name" placeholder="Enter Place Name">
+    </div>
     <br />
-    <label for="Country">Departing:</label>
-    <input type="date" id="start" name="startDate " value="2020-01-01" min="2020-01-01" max="2030-01-01">
+    <div class="container">
+      <label for="Country">departing:</label>
+      <input type="date" id="start" name="startDate " value="2020-01-01" min="2020-01-01" max="2030-01-01">
+    </div>
     <br />
-    <label for="Country">leaving:</label>
-    <input type="date" id="end" name="endDate" value="2020-01-01" min="2020-01-01" max="2030-01-01">
+    <div class="container">
+      <label for="Country">Leaveing :</label>
+      <input type="date" id="end" name="endDate" value="2020-01-01" min="2020-01-01" max="2030-01-01">
+    </div>
+  </div>
     <br />
     <button id="generate" type = "submit"> Submit </button>
-    <br /> <br />      <br /> <br />  
-    <div class="app2">
-      <div id="pic"><img src="" alt="" id="pic2"></div>
-      
-      <div id = "entryHolder">
-        <div class = "title">Place Information</div>
-        <div id = "date">  </div>  
-        <div id = "Htemp"> </div> 
-        <div id = "Ltemp"> </div> 
-        <div id = "location">  </div>  
-        <div id = "weatherD"> </div> 
-        <div id = "daysLeft"> </div> 
-      </div>
-    </div>
-    
-  
+    <br /> <br />    
   </div>
-  
-</div>
+  <div class="output_holder">
+    <div id="pic"><img src="" alt="" id="pic2"></div>
+    
+    <div id = "entryHolder">
+      <br />
+      <div id = "Htemp"> </div>
+      <div id = "Ltemp"> </div>
+      <div id = "location">  </div>
+      <div id = "weatherD"> </div>
+      <div id = "daysLeft"> </div>
+    </div>
+  </div>
 
 
   <script>
